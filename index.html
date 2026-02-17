@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquivos de treinamento</title>
-    <link rel="StyleSheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vault de Treinamentos | 5 Dias</title>
+  <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" size="32x32" href="styles.css" />
 </head>
 <body>
-    
+  <div class="layout">
+    <aside class="sidebar card">
+      <div>
+        <p class="eyebrow">Armazenamento interno</p>
+        <h1>Vault de Treinamentos</h1>
+        <p class="subtitle">Painel Treinamento | Semanal.</p>
+      </div>
+
+      <nav class="day-nav" id="dayNav"></nav>
+
+      <div class="storage-status">
+        <p>Status do espaço</p>
+        <div class="progress-wrap">
+          <div id="storageProgress" class="progress"></div>
+        </div>
+        <small id="storageText">0 MB de 150 MB</small>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar card">
+        <div>
+          <p class="eyebrow">Semana de treinamento</p>
+          <h2 id="selectedDayTitle">Dia 1</h2>
+        </div>
+        <div class="topbar-metrics">
+          <div>
+            <span id="totalDocs">0</span>
+            <small>Documentos</small>
+          </div>
+          <div>
+            <span id="totalSize">0 MB</span>
+            <small>Armazenado</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="cards-grid" id="dayCards"></section>
+
+      <section class="card repository">
+        <div class="section-title">
+          <h3>Repositório do treinamento</h3>
+          <small>Documentos do dia selecionado</small>
+        </div>
+        <div id="emptyState" class="empty-state">Nenhum arquivo enviado para este dia.</div>
+        <ul id="fileList" class="file-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
