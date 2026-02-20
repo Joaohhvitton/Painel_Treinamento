@@ -21,7 +21,16 @@ const trainingDays = [
     driveUrl:
       "https://docs.google.com/presentation/d/16ZtCLSF5vaskonP92cXY8TlMX5tbRb4Y/edit?usp=sharing&ouid=116387531387832367212&rtpof=true&sd=true"
   },
-  { id: "qua", label: "Dia 3", name: "Quarta-feira", training: "Sistemas e fluxo" },
+
+    {
+    id: "qua",
+    label: "Dia 3",
+    name: "Quarta-feira",
+    training: "Conhecendo os sistemas",
+    driveUrl:
+      "https://docs.google.com/presentation/d/1FW6KH7bERgOCpklV7Dap8Ntf3baTIGa2/edit?usp=sharing&ouid=116387531387832367212&rtpof=true&sd=true"
+    };
+      
   { id: "qui", label: "Dia 4", name: "Quinta-feira", training: "Qualidade e compliance" },
   { id: "sex", label: "Dia 5", name: "Sexta-feira", training: "Projeto final + avaliação" }
 ];
@@ -309,3 +318,4 @@ document.addEventListener("change", async (event) => {
 });
 
 renderAll();
+
